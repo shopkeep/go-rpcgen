@@ -11,8 +11,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/kylelemons/go-rpcgen/examples/remote/offload"
-	"github.com/kylelemons/go-rpcgen/webrpc"
+	"github.com/pguelpa/go-rpcgen/examples/remote/offload"
+	"github.com/pguelpa/go-rpcgen/webrpc"
 )
 
 var addr = flag.String("addr", ":9999", "RPC server bind address")
