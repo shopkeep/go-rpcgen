@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/kylelemons/go-rpcgen/examples/add/addservice"
+	"github.com/pguelpa/go-rpcgen/examples/add/addservice"
 )
 
 var (
@@ -72,11 +72,12 @@ func main() {
 		in := &addservice.AddMessage{X: &x, Y: &y}
 		out := &addservice.SumMessage{}
 		if err := sum.Add(in, out); err != nil {
-			log.Fatalf("Add failed with: %s", err)
+			log.Printf("Add failed with: %s", err)
 		}
 		if out.Z == nil {
-			log.Fatalf("Sum failed with no message returned")
+			log.Println("No results received")
+		} else {
+			fmt.Printf("Received %d\n\n", *out.Z)
 		}
-		fmt.Printf("Received %d\n\n", *out.Z)
 	}
 }

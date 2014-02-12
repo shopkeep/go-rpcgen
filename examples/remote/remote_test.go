@@ -12,8 +12,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/kylelemons/go-rpcgen/examples/remote/offload"
-	"github.com/kylelemons/go-rpcgen/webrpc"
+	"github.com/pguelpa/go-rpcgen/examples/remote/offload"
+	"github.com/pguelpa/go-rpcgen/webrpc"
 )
 
 var base = flag.String("base", "http://localhost:9999/", "RPC server base URL")
