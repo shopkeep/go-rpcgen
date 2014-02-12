@@ -12,10 +12,9 @@ import (
 	"crypto/tls"
 	"errors"
 	"flag"
+	"github.com/pguelpa/go-rpcgen/examples/add/addservice"
 	"log"
 	"net"
-
-	"github.com/kylelemons/go-rpcgen/examples/add/addservice"
 )
 
 var (
@@ -31,8 +30,6 @@ type Add struct{}
 // called concurrently, so if the Add structure did have internal state,
 // it should be designed for concurrent access.
 func (Add) Add(in *addservice.AddMessage, out *addservice.SumMessage) error {
-	return errors.New("Math Error")
-
 	out.Z = new(int32)
 	*out.Z = *in.X + *in.Y
 	log.Printf("server: X=%d Y=%d Z=%d", *in.X, *in.Y, *out.Z)
