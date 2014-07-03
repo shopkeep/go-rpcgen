@@ -13,7 +13,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/pguelpa/go-rpcgen/examples/echo/echoservice"
+	"github.com/shopkeep/go-rpcgen/examples/echo/echoservice"
 )
 
 var server = flag.String("server", "localhost:9999", "RPC server address")

@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/pguelpa/go-rpcgen/examples/add/addservice"
+	"github.com/shopkeep/go-rpcgen/examples/add/addservice"
 )
 
 var (
