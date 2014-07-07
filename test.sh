@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO="github.com/pguelpa/go-rpcgen"
+REPO="github.com/shopkeep/go-rpcgen"
 
 function err {
   echo "$@"

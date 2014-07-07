@@ -2,7 +2,7 @@
 
 ROOT="."
 RPCGEN=$(dirname "$0")
-PREFIX="github.com/pguelpa/go-rpcgen"
+PREFIX="github.com/shopkeep/go-rpcgen"
 
 set -e
 
