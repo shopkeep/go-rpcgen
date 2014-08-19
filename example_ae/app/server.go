@@ -12,7 +12,7 @@ import (
 	"net/http"
 	"whoami"
 
-	_ "github.com/pguelpa/go-rpcgen/webrpc"
+	_ "github.com/shopkeep/go-rpcgen/webrpc"
 )
 
 type server struct{}

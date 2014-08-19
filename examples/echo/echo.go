@@ -10,7 +10,7 @@ import (
 	"flag"
 	"log"
 
-	"github.com/pguelpa/go-rpcgen/examples/echo/echoservice"
+	"github.com/shopkeep/go-rpcgen/examples/echo/echoservice"
 )
 
 var (

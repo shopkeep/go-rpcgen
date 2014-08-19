@@ -10,11 +10,11 @@ import (
 	"crypto/rand"
 	"crypto/rsa"
 	"crypto/tls"
-	"errors"
 	"flag"
-	"github.com/pguelpa/go-rpcgen/examples/add/addservice"
 	"log"
 	"net"
+
+	"github.com/shopkeep/go-rpcgen/examples/add/addservice"
 )
 
 var (

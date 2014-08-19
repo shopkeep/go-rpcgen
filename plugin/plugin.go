@@ -8,7 +8,7 @@
 // RPC stubs for use with the the net/rpc package.
 //
 // To register the plugin, import this package as follows:
-//   import _ "github.com/pguelpa/go-rpcgen/plugin"
+//   import _ "github.com/shopkeep/go-rpcgen/plugin"
 package plugin
 
 import (
@@ -84,12 +84,12 @@ func (p *Plugin) GenerateImports(file *generator.FileDescriptor) {
 	if p.rpcImports {
 		p.P(`import "net"`)
 		p.P(`import "net/rpc"`)
-		p.P(`import "github.com/pguelpa/go-rpcgen/codec"`)
+		p.P(`import "github.com/shopkeep/go-rpcgen/codec"`)
 	}
 	if p.webImports {
 		p.P(`import "net/url"`)
 		p.P(`import "net/http"`)
-		p.P(`import "github.com/pguelpa/go-rpcgen/webrpc"`)
+		p.P(`import "github.com/shopkeep/go-rpcgen/webrpc"`)
 	}
 }
 
