@@ -14,7 +14,7 @@ import (
 	"net"
 	"net/rpc"
 
-	"code.google.com/p/goprotobuf/proto"
+	"github.com/golang/protobuf/proto"
 	"github.com/shopkeep/go-rpcgen/plugin/wire"
 )
 
